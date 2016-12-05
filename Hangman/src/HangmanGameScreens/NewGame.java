@@ -80,8 +80,8 @@ public class NewGame extends JFrame {
 
 				} else {
 					GameScreen gs = new GameScreen();
-					setVisible(false);
 					gs.setVisible(true);
+					dispose();
 				}
 			}
 		});

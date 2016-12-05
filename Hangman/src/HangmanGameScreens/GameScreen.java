@@ -140,8 +140,8 @@ public class GameScreen extends JFrame {
 										Win winScreen = new Win(GameData.getInstance().getMissedCount(),
 												GameData.getInstance().getGuessCount(),
 												GameData.getInstance().getGuessWord().toUpperCase());
-										setVisible(false);
 										winScreen.setVisible(true);
+										dispose();
 									}
 								}
 							}
@@ -163,8 +163,8 @@ public class GameScreen extends JFrame {
 							if (GameData.getInstance().getMissedCount() == 8) {
 								Lose lose = new Lose(GameData.getInstance().getMissedCount(),
 										GameData.getInstance().getGuessCount(), GameData.getInstance().getGuessWord());
-								setVisible(false);
 								lose.setVisible(true);
+								dispose();
 							}
 							String lettersUsed = lblNewLabel_10.getText().toUpperCase();
 							if (lettersUsed.length() != 16) {
@@ -195,8 +195,8 @@ public class GameScreen extends JFrame {
 					// Winner
 					Win winScreen = new Win(GameData.getInstance().getMissedCount(),
 							GameData.getInstance().getGuessCount(), GameData.getInstance().getGuessWord());
-					setVisible(false);
 					winScreen.setVisible(true);
+					dispose();
 				} else {
 					// Loser
 					GameData.getInstance().incrementGuessCount();
@@ -204,8 +204,8 @@ public class GameScreen extends JFrame {
 					Lose loseScreen = new Lose(GameData.getInstance().getMissedCount(),
 							GameData.getInstance().getGuessCount(),
 							GameData.getInstance().getGuessWord().toUpperCase());
-					setVisible(false);
 					loseScreen.setVisible(true);
+					dispose();
 				}
 			}
 		}));
@@ -216,8 +216,8 @@ public class GameScreen extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				Lose lostGame = new Lose(GameData.getInstance().getMissedCount(),
 						GameData.getInstance().getGuessCount(), GameData.getInstance().getGuessWord());
-				setVisible(false);
 				lostGame.setVisible(true);
+				dispose();
 			}
 		});
 		contentPane.add(btnForfeit);
@@ -227,8 +227,8 @@ public class GameScreen extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				GameData.getInstance().setGuessWord("No Current Word");
 				NewGame newGame = new NewGame();
-				setVisible(false);
 				newGame.setVisible(true);
+				dispose();
 			}
 		}));
 		contentPane.add(btnNewGame);

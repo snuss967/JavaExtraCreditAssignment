@@ -57,8 +57,8 @@ public class Win extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				GameData.getInstance().setGuessWord("No Current Word");
 				NewGame newGame = new NewGame();
-				setVisible(false);
 				newGame.setVisible(true);
+				dispose();
 			}
 		});
 		getContentPane().add(playGame);
