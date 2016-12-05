@@ -1,0 +1,22 @@
+Welcome to my Hangman Game
+This Game is extremely easy to build and run because we did not develop it in C.
+Just open the game in Eclipse or your IDE of choice and select run HangMan or right click on the Hangman.java file under game data. 
+If you really want to deal with JAVAC and JAVA in the command line be my guest. Im just not supporting it because that would be a dumbway to go about building this.
+
+Instructions To Play:
+1. Find Your Hangman Partner
+2. Launch The Game By Running in in Your Favorite IDE
+3. Make sure that the person that has the computer has the computer out of view of the other person
+4. Enter a word of 22 characters or less
+5. Save The Word
+6. Play the game
+7. Pass the Game to your opponent
+8. Let them guess words they get 8 tries before they lose
+9. Try not to complete the hangman object
+
+Future ways that we can improve this project. 
+We could let the user play hangman with whatever image they want we could split an image done 8 paths. 
+Save game functionality. 
+Refactoring the entire code for security. 
+
+Good Luck!!!
